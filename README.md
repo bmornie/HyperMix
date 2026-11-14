@@ -50,7 +50,7 @@ See `significant_motifs/` for example files. This folder contains the IDs of mot
 - `-e <int>`: Number of candidate weights evaluated in each generation (default: 100).
 - `-s <int>`: Number of hypergraphs generated for each evaluation (default: 200).
 - `-f`: Toggles fixed weights. Dynamic weights are used by default.
-- `-o <file>`: File in which all evaluated weights and the corresponding loss values are stored (default: `<target>_<loss_id>.npz`).
+- `-o <file>`: File in which all evaluated weights and the corresponding loss values are stored (default: `<target>_L<loss_id>.npz`).
 - `-w <int>`: Number of workers used to parallellize evaluations (default: 1).  
   
 
@@ -78,7 +78,7 @@ Make sure `n` is not larger than the number of stored hypergraphs!
 The results for the Diseasome HyperMix M3 model can be reproduced with the following commands:
 ```bash
 python optimize.py data/diseasome.txt -l 3 -g 50 -e 100 -s 200
-python generate.py data/diseasome.txt diseasome_3.npz 200
+python generate.py data/diseasome.txt diseasome_L3.npz 200
 python analyze.py data/diseasome.txt output 200
 ```
 Please note that the weights optimization will take a while with the provided settings.
