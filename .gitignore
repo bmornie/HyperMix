@@ -1,0 +1,72 @@
+
+# =========================
+# CMake / C++ build files
+# =========================
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Compiled C++ files
+*.o
+*.obj
+*.a
+*.lib
+*.exp
+*.pdb
+*.ilk
+
+# Compiled Python extensions
+*.pyd
+*.so
+*.dylib
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python packaging
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Testing and analysis
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# =========================
+# IDEs and editors
+# =========================
+.vs/
+.idea/
+*.suo
+*.user
+
+# =========================
+# Operating systems
+# =========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# =========================
+# Local configuration
+# =========================
+.env
+.env.*
+CMakeUserPresets.json
