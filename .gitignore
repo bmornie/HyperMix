@@ -48,6 +48,7 @@ build/
 .ruff_cache/
 .coverage
 htmlcov/
+output/
 
 # =========================
 # IDEs and editors
